@@ -40,6 +40,8 @@ public class PracticeFormTests {
         $("#city").$(byText("Karnal")).click();
         $("#submit").click();
 
+
+        $(".modal-title").shouldHave(text("Thanks for submitting the form"));
         $(".modal-body").shouldHave(text("alena ivanova"));
         $(".modal-body").shouldHave(text("ivanova@gmail.com"));
         $(".modal-body").shouldHave(text("Female"));
